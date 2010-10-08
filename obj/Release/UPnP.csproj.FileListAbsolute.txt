@@ -1,0 +1,3 @@
+c:\source\DroneUpNP\Upnp\UPnP\bin\Release\UPnP.dll
+c:\source\DroneUpNP\Upnp\UPnP\obj\Release\ResolveAssemblyReference.cache
+c:\source\DroneUpNP\Upnp\UPnP\obj\Release\UPnP.dll

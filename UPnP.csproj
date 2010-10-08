@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{584ED187-8F2A-4B58-A266-85F3F212B092}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>UPnP</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenSource.UPnP</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\UPnP.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\UPnP.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AsyncSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AudioVideoDevices.cs" />
+    <Compile Include="Base64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileHash\DataBlock.cs" />
+    <Compile Include="FileHash\FileHashDB.cs" />
+    <Compile Include="HTTPRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HttpRequestor.cs" />
+    <Compile Include="HTTPSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAVDevice.cs" />
+    <Compile Include="MetaData\Finder.cs" />
+    <Compile Include="Sniffer.cs" />
+    <Compile Include="SSDP.cs" />
+    <Compile Include="DText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HTTPMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HTTPSessionWatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LifeTimeMonitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NetworkInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Protocols.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SafeTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringCompresser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyncInvokeAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPNPAVCDSML\Accumulator_ContainerUpdateIDs.cs" />
+    <Compile Include="UPNPAVCDSML\AvsExceptions.cs" />
+    <Compile Include="UPNPAVCDSML\BlankObject.cs" />
+    <Compile Include="UPNPAVCDSML\CdsMetadataCaches.cs" />
+    <Compile Include="UPNPAVCDSML\CreateClass.cs" />
+    <Compile Include="UPNPAVCDSML\ICdsElement.cs" />
+    <Compile Include="UPNPAVCDSML\ImageDimensions.cs" />
+    <Compile Include="UPNPAVCDSML\IMediaResource.cs" />
+    <Compile Include="UPNPAVCDSML\InnerXmlWriter.cs" />
+    <Compile Include="UPNPAVCDSML\IUPnPMedia.cs" />
+    <Compile Include="UPNPAVCDSML\IValueType.cs" />
+    <Compile Include="UPNPAVCDSML\MediaBuilder.cs" />
+    <Compile Include="UPNPAVCDSML\MediaClass.cs" />
+    <Compile Include="UPNPAVCDSML\MediaComparer.cs" />
+    <Compile Include="UPNPAVCDSML\MediaComparer2.cs" />
+    <Compile Include="UPNPAVCDSML\MediaContainer.cs" />
+    <Compile Include="UPNPAVCDSML\MediaEnums.cs" />
+    <Compile Include="UPNPAVCDSML\MediaItem.cs" />
+    <Compile Include="UPNPAVCDSML\MediaObject.cs" />
+    <Compile Include="UPNPAVCDSML\MediaProperties.cs" />
+    <Compile Include="UPNPAVCDSML\MediaResource.cs" />
+    <Compile Include="UPNPAVCDSML\MediaSorter.cs" />
+    <Compile Include="UPNPAVCDSML\MediaSorter2.cs" />
+    <Compile Include="UPNPAVCDSML\MetadataValueComparer.cs" />
+    <Compile Include="UPNPAVCDSML\MimeTypes.cs" />
+    <Compile Include="UPNPAVCDSML\PreventNullCast.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyBool.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyDate.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyDateTime.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyEnumWriteStatus.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyInt.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyLanguage.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyLong.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyMappings.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyPersonWithRole.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyStorageMedium.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyString.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyUInt.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyULong.cs" />
+    <Compile Include="UPNPAVCDSML\PropertyUri.cs" />
+    <Compile Include="UPNPAVCDSML\ProtocolInfoString.cs" />
+    <Compile Include="UPNPAVCDSML\ResourceBuilder.cs" />
+    <Compile Include="UPNPAVCDSML\SearchClass.cs" />
+    <Compile Include="UPNPAVCDSML\SortedObjectCache.cs" />
+    <Compile Include="UPNPAVCDSML\StorageMediums.cs" />
+    <Compile Include="UPNPAVCDSML\TagExtractor.cs" />
+    <Compile Include="UPNPAVCDSML\Tags.cs" />
+    <Compile Include="UPNPAVCDSML\ToXmlData.cs" />
+    <Compile Include="UPNPAVCDSML\ToXmlFormatter.cs" />
+    <Compile Include="UPNPAVCDSML\_ArrayList.cs" />
+    <Compile Include="UPNPAVCDSML\_DateTime.cs" />
+    <Compile Include="UPNPAVCDSML\_Hashtable.cs" />
+    <Compile Include="UPNPAVCDSML\_Int.cs" />
+    <Compile Include="UPNPAVCDSML\_Long.cs" />
+    <Compile Include="UPNPAVCDSML\_SortedList.cs" />
+    <Compile Include="UPNPAVCDSML\_TimeSpan.cs" />
+    <Compile Include="UPNPAVCDSML\_UInt.cs" />
+    <Compile Include="UPNPAVCDSML\_ULong.cs" />
+    <Compile Include="UPNPAVMSCP\AvsCpExceptions.cs" />
+    <Compile Include="UPNPAVMSCP\BrowseRequest.cs" />
+    <Compile Include="UPNPAVMSCP\CdsBrowser.cs" />
+    <Compile Include="UPNPAVMSCP\CdsSpider.cs" />
+    <Compile Include="UPNPAVMSCP\ContainerDiscovery.cs" />
+    <Compile Include="UPNPAVMSCP\CpMediaBuilder.cs" />
+    <Compile Include="UPNPAVMSCP\CpMediaContainer.cs" />
+    <Compile Include="UPNPAVMSCP\CpMediaItem.cs" />
+    <Compile Include="UPNPAVMSCP\CpMediaResource.cs" />
+    <Compile Include="UPNPAVMSCP\CpMediaServer.cs" />
+    <Compile Include="UPNPAVMSCP\CpResourceBuilder.cs" />
+    <Compile Include="UPNPAVMSCP\CpRootCollectionContainer.cs" />
+    <Compile Include="UPNPAVMSCP\CpRootContainer.cs" />
+    <Compile Include="UPNPAVMSCP\ICpMedia.cs" />
+    <Compile Include="UPNPAVMSCP\MediaBrowser.cs" />
+    <Compile Include="UPNPAVMSCP\MediaServerDiscovery.cs" />
+    <Compile Include="UPNPAVMSCP\Requests.cs" />
+    <Compile Include="UPNPAVMSCP\ResourceTransfer.cs" />
+    <Compile Include="UPNPAVMSCP\ServerBrowser.cs" />
+    <Compile Include="UPNPAVMSDV\AvsDvExceptions.cs" />
+    <Compile Include="UPNPAVMSDV\DeviceInfo.cs" />
+    <Compile Include="UPNPAVMSDV\DvMediaBuilder.cs" />
+    <Compile Include="UPNPAVMSDV\DvMediaContainer.cs" />
+    <Compile Include="UPNPAVMSDV\DvMediaItem.cs" />
+    <Compile Include="UPNPAVMSDV\DvMediaReference.cs" />
+    <Compile Include="UPNPAVMSDV\DvMediaResource.cs" />
+    <Compile Include="UPNPAVMSDV\DvResourceBuilder.cs" />
+    <Compile Include="UPNPAVMSDV\DvRootContainer.cs" />
+    <Compile Include="UPNPAVMSDV\IDvMedia.cs" />
+    <Compile Include="UPNPAVMSDV\InnerXmlWriterDv.cs" />
+    <Compile Include="UPNPAVMSDV\MediaServerDevice.cs" />
+    <Compile Include="UPNPAVMSDV\ToXmlDataDv.cs" />
+    <Compile Include="UPNPAV_DeviceRendererStack\AVConnection.cs" />
+    <Compile Include="UPNPAV_DeviceRendererStack\AVRenderer.cs" />
+    <Compile Include="UPNPAV_DeviceRendererStack\InstanceID_LastChangeAccumulator.cs" />
+    <Compile Include="UPnPComplexType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MiniWebServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPControlPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPDebugObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPDevice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPDeviceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPDeviceWatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPInternalSmartControlPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPModeratedStateVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPMulticastSniffer.cs" />
+    <Compile Include="UPnPSearchSniffer.cs" />
+    <Compile Include="UPnPService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPServiceWatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPSmartControlPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPnPStringFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UPNP_AV\CpAVTransport.cs" />
+    <Compile Include="UPNP_AV\CpConnectionManager.cs" />
+    <Compile Include="UPNP_AV\CpContentDirectory.cs" />
+    <Compile Include="UPNP_AV\CpRenderingControl.cs" />
+    <Compile Include="UPNP_AV\DvAVTransport.cs" />
+    <Compile Include="UPNP_AV\DvConnectionManager.cs" />
+    <Compile Include="UPNP_AV\DvContentDirectory.cs" />
+    <Compile Include="UPNP_AV\DvRenderingControl.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WeakEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XBMCAVDevice.cs" />
+    <Compile Include="__LockRMWO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__ReadOnlyCollections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
